@@ -1,0 +1,8 @@
+{
+  "name": "Remix Santa Towing 24 - ndcghana2026",
+  "description": "Premium automotive services including 24/7 towing, rentals, repairs, and auto parts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,459 @@
+{
+  "theme": {
+    "primary": "#015557",
+    "secondary": "#192e2e",
+    "accent": "#d80000",
+    "dark": "#131514",
+    "white": "#ffffff",
+    "black": "#000000"
+  },
+  "global": {
+    "brand": {
+      "name": "Santa Towing & Garage Services Ltd.",
+      "shortName": "Santa Towing",
+      "tagline": "24/7 Emergency Towing, Haulage & Automotive Services in Ghana"
+    },
+    "logo": {
+      "url": "https://i.ibb.co/KgkfFKV/Santa-Logo.png",
+      "alt": "Santa Towing & Garage Services Ltd. Logo"
+    },
+    "links": {
+      "phone": "0244753849",
+      "phoneDisplay": "0244753849",
+      "phoneFormatted": "024 475 3849",
+      "phoneTel": "tel:0244753849",
+      "whatsapp": "https://wa.me/233244753849",
+      "whatsappNumber": "0244753849",
+      "whatsappDisplay": "WhatsApp: 0244753849",
+      "email": "info@santatowing.com",
+      "address": "123 Spintex Road, Accra, Ghana",
+      "hours": "24/7 Towing Service",
+      "coverage": "Nationwide Coverage"
+    },
+    "social": {
+      "facebook": "https://facebook.com/santatowing",
+      "twitter": "https://twitter.com/santatowing",
+      "instagram": "https://instagram.com/santatowing",
+      "linkedin": "https://linkedin.com/company/santatowing"
+    },
+    "images": {
+      "logo": "https://i.ibb.co/KgkfFKV/Santa-Logo.png",
+      "towingVehicle": "https://i.ibb.co/gZh5x06r/Image-1-Towing-Vehicle.jpg",
+      "suvKiaSportage": "https://i.ibb.co/zVkLKHdN/Image-2-A-SUV-KIA-Sportage-2024-Ratio.png",
+      "sedanCorolla": "https://i.ibb.co/KcZkH37Y/Image-3-Sedan-Toyotta-Corolla.jpg",
+      "vanHyundai": "https://i.ibb.co/WpNkptMZ/Image-4-Van-Hyundai-H1-2022.jpg",
+      "economyNissan": "https://i.ibb.co/Mx8G6vHw/Image-5-Economy-Nissan-Almera-2021.jpg",
+      "luxuryMercedes": "https://i.ibb.co/DH19ffJd/Image-6-Luxury-Mercedes-Benz.jpg",
+      "pickupHilux": "https://i.ibb.co/vC6nfrK8/Image-7-Pickup-Toyota-Hilux-2023.jpg",
+      "heavyRecovery": "https://i.ibb.co/0RDWpXBh/Image-8-Heavy-Duty-Recovery-Vehicle-or-Car.jpg",
+      "batteryMaintenance": "https://i.ibb.co/j9GzSqt8/Image-9-Car-Battery-Maintenance.jpg",
+      "engineFluids": "https://i.ibb.co/1YFx5jQV/Image-10-Engine-Oil-and-Fluids-Maintenance.jpg",
+      "brakeParts": "https://i.ibb.co/JRyRmbjF/Image-11-Brake-Parts-and-Disk-Maintenance.jpg",
+      "tyreMaintenance": "https://i.ibb.co/23wLXy6t/Image-12-Tyre-Maintenance.jpg",
+      "filtersMaintenance": "https://i.ibb.co/qV5D1J9/Image-13-Filters-maintenance.jpg",
+      "suspensionParts": "https://i.ibb.co/35NfN5Lx/Image-14-Suspension-Parts-maintenance.jpg",
+      "carLighting": "https://i.ibb.co/WpyLYZQk/Image-15-Car-Lightening-maintenance.jpg",
+      "autoAccessories": "https://i.ibb.co/3998gkTG/Image-16-Accessories.jpg",
+      "welcomeTowing": "https://i.ibb.co/fYF9HrC2/Welcome-Towing-Image.jpg",
+      "mobileScreen": "https://i.ibb.co/0j2J24PF/Santa-App-Mobile-Screen.png",
+      "constructionHaulage": "/src/assets/images/construction_haulage_1790967998627.jpg"
+    },
+    "nav": {
+      "home": "Home",
+      "towingDropdown": "Towing Services",
+      "emergencyTowing": "Emergency Towing",
+      "serviceAreas": "Service Areas Directory",
+      "haulage": "Haulage Services",
+      "carSales": "Car Sales",
+      "carRentals": "Car Rentals",
+      "garageDropdown": "Garage Services",
+      "repairs": "Auto Repairs & Diagnostics",
+      "bodyWorks": "Auto Body Works & Spraying",
+      "parts": "Genuine Auto Parts",
+      "fleet": "Corporate Fleet Services",
+      "allServices": "All Services Overview",
+      "companyDropdown": "Company",
+      "gallery": "Gallery",
+      "blog": "Blog & Advice",
+      "faqs": "FAQs",
+      "sitemap": "Website Sitemap",
+      "contact": "Contact",
+      "search": "Search",
+      "callNow": "Call Now: 0244753849"
+    },
+    "footer": {
+      "about": "Ghana's premier automotive partner for 24/7 rapid emergency towing, heavy car recovery, certified garage repairs, car sales, and rental fleet solutions.",
+      "quickLinksTitle": "Quick Links",
+      "servicesTitle": "Our Services",
+      "legalTitle": "Legal and Policies",
+      "stayConnectedTitle": "Stay Connected",
+      "newsletterText": "Subscribe for roadside safety tips, car maintenance reminders, and exclusive service discounts.",
+      "newsletterPlaceholder": "Enter your email",
+      "newsletterButton": "Subscribe Now",
+      "newsletterSuccess": "Thank you! You have successfully subscribed to Santa Towing updates.",
+      "copyright": "Santa Towing & Garage Services Ltd. All rights reserved."
+    },
+    "floatingButtons": {
+      "towTooltip": "Request Emergency Tow",
+      "whatsappTooltip": "Chat on WhatsApp"
+    }
+  },
+  "seo": {
+    "siteUrl": "https://sparkprimeautoservices.com",
+    "home": {
+      "title": "Santa Towing | 24/7 Towing, Haulage, Repairs & Rentals in Ghana",
+      "description": "Expert 24/7 emergency towing, nationwide haulage & heavy machinery transport, professional auto repairs, car sales, and premium car rentals in Ghana."
+    },
+    "services": {
+      "title": "Comprehensive Automotive Services | Santa Towing",
+      "description": "Explore our complete range of professional automotive services including 24/7 towing, mechanical repairs, body works, car sales, and rentals."
+    },
+    "towing": {
+      "title": "24/7 Emergency Towing & Car Recovery in Ghana | Santa Towing",
+      "description": "Fast, reliable 24/7 emergency towing, flatbed recovery, and roadside assistance across Accra, Tema, Kumasi, and nationwide in Ghana."
+    },
+    "haulage": {
+      "title": "Haulage & Heavy Equipment Transport Services in Ghana | Santa Towing",
+      "description": "Professional heavy haulage, flatbed freight, lowbed machinery transport, and container logistics across Ghana. Safe, insured, and reliable cargo transport."
+    },
+    "rental": {
+      "title": "Premium Car Rental Services in Ghana | Santa Towing",
+      "description": "Rent reliable, fully insured sedans, SUVs, pickups, and luxury vehicles in Ghana. Flexible daily, weekly, and corporate monthly rates."
+    },
+    "sales": {
+      "title": "Buy Certified New & Used Cars in Ghana | Santa Towing",
+      "description": "Browse our inspected inventory of brand new, foreign used, and Ghana used cars for sale with flexible financing and warranty options."
+    },
+    "repairs": {
+      "title": "Expert Auto Repairs & Computer Diagnostics | Santa Towing",
+      "description": "Professional mechanical repairs, computer diagnostics, engine overhauls, brake servicing, and routine maintenance by certified technicians."
+    },
+    "bodyWorks": {
+      "title": "Auto Body Works, Collision Repair & Spray Painting | Santa Towing",
+      "description": "Restore your vehicle to showroom condition with our professional dent repair, chassis straightening, and oven-baked spray painting services."
+    },
+    "parts": {
+      "title": "Genuine Auto Parts, Batteries & Accessories | Santa Towing",
+      "description": "Shop original OEM and certified aftermarket car parts, heavy-duty batteries, tires, lubricants, and brake pads in Ghana."
+    },
+    "fleet": {
+      "title": "Commercial Fleet Maintenance & Management | Santa Towing",
+      "description": "Dedicated B2B fleet maintenance, priority 24/7 towing, and cost-effective servicing solutions for corporate vehicles in Ghana."
+    },
+    "blog": {
+      "title": "Automotive Blog & Resources | Santa Towing",
+      "description": "Read the latest automotive guides, towing tips, safety advice, and industry updates from the experts at Santa Towing."
+    },
+    "contact": {
+      "title": "Contact Us | 24/7 Auto Support & Towing | Santa Towing",
+      "description": "Get in touch with Santa Towing for inquiries, service bookings, or emergency 24/7 towing assistance across Ghana."
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions | Santa Towing",
+      "description": "Find answers to common questions about our emergency towing, auto repair, car rental, and car sales services."
+    },
+    "gallery": {
+      "title": "Our Work Gallery | Towing & Auto Repairs | Santa Towing",
+      "description": "View our gallery showcasing successful car recoveries, auto body restorations, repair works, and our premium rental fleet."
+    },
+    "careers": {
+      "title": "Careers | Join the Santa Towing Team",
+      "description": "Explore exciting career opportunities for mechanics, tow truck operators, and administrative staff at Santa Towing."
+    },
+    "serviceAreas": {
+      "title": "Nationwide Towing Service Areas in Ghana | Santa Towing",
+      "description": "Explore our comprehensive towing and roadside assistance coverage across all 16 regions, major cities, towns, and highways in Ghana."
+    }
+  },
+  "home": {
+    "hero": {
+      "slides": [
+        {
+          "id": 1,
+          "headline": "24/7 Emergency Towing Services",
+          "subheadline": "Fast response, safe car transport, affordability, and reliability. Call us anytime, anywhere.",
+          "buttons": [
+            { "label": "Call Now: 0244753849", "primary": true, "href": "tel:0244753849" },
+            { "label": "WhatsApp Us", "primary": false, "href": "https://wa.me/233244753849" }
+          ],
+          "image": "https://i.ibb.co/0RDWpXBh/Image-8-Heavy-Duty-Recovery-Vehicle-or-Car.jpg"
+        },
+        {
+          "id": 2,
+          "headline": "Accident Recovery & Roadside Assistance",
+          "subheadline": "Professional winch-outs, flat tire changes, jump starts, and safe off-road recovery.",
+          "buttons": [
+            { "label": "Request Assistance", "primary": true, "href": "tel:0244753849" }
+          ],
+          "image": "https://i.ibb.co/j9GzSqt8/Image-9-Car-Battery-Maintenance.jpg"
+        },
+        {
+          "id": 3,
+          "headline": "Flatbed Towing & Car Transport",
+          "subheadline": "Secure and damage-free transport for luxury cars, SUVs, and specialized cars.",
+          "buttons": [
+            { "label": "Call for Transport", "primary": true, "href": "/contact" }
+          ],
+          "image": "https://i.ibb.co/1YFx5jQV/Image-10-Engine-Oil-and-Fluids-Maintenance.jpg"
+        },
+        {
+          "id": 4,
+          "headline": "Premium Car Rentals",
+          "subheadline": "Choose from our wide range of well-maintained cars for business or leisure.",
+          "buttons": [
+            { "label": "Browse Cars", "primary": true, "href": "/rental" }
+          ],
+          "image": "https://i.ibb.co/JRyRmbjF/Image-11-Brake-Parts-and-Disk-Maintenance.jpg"
+        },
+        {
+          "id": 5,
+          "headline": "Professional Auto Repairs",
+          "subheadline": "Expert diagnostics and repairs by certified mechanics you can trust.",
+          "buttons": [
+            { "label": "Call for Repair", "primary": true, "href": "tel:0244753849" },
+            { "label": "WhatsApp for Repair", "primary": false, "href": "https://wa.me/233244753849" }
+          ],
+          "image": "https://i.ibb.co/23wLXy6t/Image-12-Tyre-Maintenance.jpg"
+        }
+      ]
+    },
+    "quickActions": {
+      "items": [
+        { "id": 1, "title": "Request Towing", "description": "24/7 emergency response", "path": "/towing" },
+        { "id": 2, "title": "Rent a Car", "description": "Flexible daily & weekly rates", "path": "/rental" },
+        { "id": 3, "title": "Buy a Car", "description": "New & premium used cars", "path": "/sales" },
+        { "id": 4, "title": "Call for Repairs", "description": "Certified expert mechanics", "path": "/repairs" },
+        { "id": 6, "title": "Shop Auto Parts", "description": "Genuine replacement parts", "path": "/parts" }
+      ]
+    },
+    "stats": [
+      { "label": "Years of Experience", "value": 15, "suffix": "+" },
+      { "label": "Cars Repaired", "value": 25000, "suffix": "+" },
+      { "label": "Happy Customers", "value": 10000, "suffix": "+" },
+      { "label": "Emergency Calls Completed", "value": 5000, "suffix": "+" }
+    ],
+    "about": {
+      "badge": "Welcome to Santa Towing",
+      "heading": "Leading Towing & Premium Automotive Care",
+      "p1": "With over 15 years of industry excellence, Santa Towing & Garage Services is your premier partner for 24/7 emergency towing, heavy car recovery, certified mechanical repairs, and premium car rentals.",
+      "p2": "Whether you are stranded on the motorway, looking to purchase a reliable vehicle, rent a car for your business trip, or need expert mechanical repairs, we are committed to delivering safety, professionalism, and affordability.",
+      "discoverBtn": "Discover Our Services",
+      "callBtn": "Call Hotline",
+      "badgeTitle": "Emergency Towing",
+      "badgeSubtitle": "Rapid Dispatch Team",
+      "badgeDescription": "Nationwide roadside assistance with guaranteed fast arrival."
+    },
+    "servicesSection": {
+      "heading": "Complete Towing & Automotive Solutions",
+      "description": "From emergency towing to scheduled maintenance, our specialized team delivers reliable, high-standard automotive support across Ghana.",
+      "viewAllBtn": "View All Automotive Services"
+    },
+    "haulage": {
+      "badge": "Heavy Haulage Solutions",
+      "heading": "Nationwide Heavy Haulage & Industrial Transport",
+      "description": "Comprehensive freight solutions, heavy machinery hauling, container transport, and oversized cargo logistics across Ghana and West Africa.",
+      "ctaCall": "Call for Haulage: 0244753849",
+      "ctaWhatsApp": "WhatsApp Haulage Quote"
+    },
+    "featuredCars": {
+      "heading": "Featured Cars for Sale",
+      "description": "Explore our vetted inventory of premium brand-new and certified pre-owned cars with complete mechanical inspection reports.",
+      "viewAllBtn": "View Full Car Inventory"
+    },
+    "rentalFleet": {
+      "heading": "Premium Car Rental Fleet",
+      "description": "Clean, fully insured cars available for daily, weekly, or corporate monthly rentals with airport pickup options."
+    },
+    "autoParts": {
+      "heading": "Genuine Auto Parts & Accessories",
+      "description": "We stock thousands of high-quality OEM and verified aftermarket parts, batteries, and accessories to keep your car running at peak performance.",
+      "browseBtn": "Browse Full Catalog"
+    },
+    "whyChooseUs": {
+      "badge": "Why Santa Towing",
+      "heading": "Why Choose Santa Towing & Garage?",
+      "description": "We don't just fix cars; we build lasting relationships based on trust, swift emergency response, quality workmanship, and transparent pricing.",
+      "bannerHeading": "Need Immediate Roadside Assistance or Repairs?",
+      "bannerSubtext": "Our 24/7 emergency dispatch and expert mechanical teams are standing by right now.",
+      "requestOnlineBtn": "Request Tow Online"
+    },
+    "blogSection": {
+      "heading": "Latest News & Maintenance Insights",
+      "viewAllBtn": "View All Articles"
+    },
+    "faqSection": {
+      "heading": "Frequently Asked Questions",
+      "description": "Quick answers regarding our 24/7 towing response times, repair warranties, car rentals, and pricing."
+    },
+    "bottomSections": {
+      "appBadge": "Mobile Dispatch App",
+      "appHeading": "Instant Roadside Rescue in the Palm of Your Hand",
+      "appDescription": "Experience the next generation of roadside assistance. Request emergency towing, track your flatbed in real-time, and get back on the road safely.",
+      "ctaBannerHeading": "Stranded On The Road? We Are Ready To Move.",
+      "ctaBannerDescription": "Our dispatch centers in Accra, Tema, Kumasi, and Takoradi are operational 24/7.",
+      "callEmergency": "Call 0244753849",
+      "chatWhatsApp": "WhatsApp 24/7"
+    }
+  },
+  "towing": {
+    "badge": "24/7 Emergency Assistance",
+    "title": "24/7 Emergency Towing & Car Recovery",
+    "description": "Fast response, modern flatbed and wheel-lift towing, heavy equipment transport, and nationwide roadside assistance across Ghana.",
+    "hotline": "0244753849",
+    "averageTime": "15-30 Min Arrival Time",
+    "calculatorTitle": "Instant Towing Rate Calculator",
+    "quoteHeading": "Need Immediate Towing Assistance?",
+    "quoteSubheading": "Our dispatch team will connect you with the nearest tow truck instantly."
+  },
+  "haulage": {
+    "badge": "Heavy Cargo & Logistics",
+    "title": "Heavy Haulage & Equipment Transport",
+    "description": "Specialized heavy transport for construction machinery, industrial equipment, containers, and oversized loads nationwide in Ghana.",
+    "callCta": "Call for Haulage: 0244753849",
+    "whatsappCta": "WhatsApp for Haulage"
+  },
+  "services": {
+    "badge": "Complete Automotive Solutions",
+    "title": "Our Professional Automotive Services",
+    "description": "From 24/7 emergency roadside towing to major mechanical repairs, spray painting, car rentals, and parts supply in Ghana.",
+    "callNow": "Call Dispatch: 0244753849",
+    "whatsappNow": "WhatsApp Us"
+  },
+  "sales": {
+    "badge": "Verified Vehicles",
+    "title": "Quality Cars For Sale",
+    "description": "Explore certified new, foreign-used, and inspected Ghana-used cars with flexible financing and warranty options."
+  },
+  "rental": {
+    "badge": "Flexible Car Rentals",
+    "title": "Car Rental Services in Ghana",
+    "description": "Premium self-drive and chauffeur-driven rental cars for business, events, airport pickups, and long-term lease."
+  },
+  "repairs": {
+    "badge": "Certified Mechanics",
+    "title": "Professional Auto Repairs & Diagnostics",
+    "description": "Advanced computer diagnostics, engine rebuilds, transmission repairs, suspension overhaul, and routine maintenance."
+  },
+  "bodyWorks": {
+    "badge": "Automotive Aesthetics",
+    "title": "Body Works, Dent Repair & Spray Painting",
+    "description": "Factory-grade spray booth painting, computerized frame alignment, collision repair, and scratch restoration."
+  },
+  "parts": {
+    "badge": "Genuine Auto Parts",
+    "title": "Original Auto Parts & Batteries",
+    "description": "OEM replacement parts, premium car batteries, lubricants, brake components, and vehicle accessories with warranty."
+  },
+  "fleet": {
+    "badge": "Corporate Solutions",
+    "title": "Commercial Fleet Maintenance & Management",
+    "description": "Scheduled maintenance contracts, priority 24/7 emergency towing, and full fleet optimization for businesses in Ghana.",
+    "heroImage": "https://i.ibb.co/vC6nfrK8/Image-7-Pickup-Toyota-Hilux-2023.jpg"
+  },
+  "contact": {
+    "badge": "Get in Touch",
+    "title": "We're Here to Help - Anytime, Anywhere",
+    "description": "Reach out for towing, repairs, rentals, car sales, or general enquiries. Our dedicated team is ready to assist you.",
+    "phone": "0244753849",
+    "address": "123 Automotive Avenue, Spintex Road, Accra, Ghana",
+    "hours": "24 Hours / 7 Days a Week",
+    "heroImage": "https://i.ibb.co/zVkLKHdN/Image-2-A-SUV-KIA-Sportage-2024-Ratio.png"
+  },
+  "blog": {
+    "badge": "Insights & Guides",
+    "title": "Blog & Resources",
+    "description": "Expert advice, maintenance tips, safety guidelines, and company news to keep you moving safely on the road.",
+    "heroImage": "https://i.ibb.co/WpyLYZQk/Image-15-Car-Lightening-maintenance.jpg"
+  },
+  "faqs": {
+    "badge": "Help & Support",
+    "title": "Frequently Asked Questions",
+    "description": "Find quick answers about our towing, rental, repair, sales, and parts services.",
+    "stillHaveQuestionsTitle": "Still Have Questions?",
+    "stillHaveQuestionsText": "If you couldn't find the answer you were looking for, our customer support team is ready to help you out."
+  },
+  "gallery": {
+    "badge": "Our Work in Action",
+    "title": "See Our Work in Action",
+    "description": "A visual look at our towing fleet, workshop facilities, car inventory, and completed repairs. Quality you can see.",
+    "heroImage": "https://i.ibb.co/0RDWpXBh/Image-8-Heavy-Duty-Recovery-Vehicle-or-Car.jpg",
+    "beforeImage": "https://i.ibb.co/1YFx5jQV/Image-10-Engine-Oil-and-Fluids-Maintenance.jpg",
+    "afterImage": "https://i.ibb.co/j9GzSqt8/Image-9-Car-Battery-Maintenance.jpg"
+  },
+  "careers": {
+    "badge": "Careers",
+    "title": "Build Your Career With Us",
+    "description": "Join a team driven by excellence, innovation, and a passion for automotive service. We're looking for dedicated professionals to grow with us.",
+    "heroImage": "https://i.ibb.co/qV5D1J9/Image-13-Filters-maintenance.jpg"
+  },
+  "policies": {
+    "common": {
+      "backToHome": "Back to Home",
+      "phoneLabel": "Phone",
+      "whatsappLabel": "WhatsApp Support",
+      "whatsappCta": "Chat on WhatsApp"
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "subtitle": "How we collect, use, and protect your personal information when you use our services."
+    },
+    "terms": {
+      "title": "Terms & Conditions",
+      "subtitle": "Please read these terms carefully before using our website or booking our automotive services."
+    },
+    "towingTerms": {
+      "title": "Towing Service Terms & Conditions",
+      "subtitle": "Please read these terms carefully before requesting or using our towing and recovery services."
+    },
+    "cancellation": {
+      "title": "Cancellation & Refund Policy",
+      "subtitle": "Please review our policies regarding service cancellations and refunds."
+    },
+    "pricing": {
+      "title": "Pricing & Payment Policy",
+      "subtitle": "Please review our policies regarding service pricing and payments."
+    },
+    "damageLiability": {
+      "title": "Car Damage & Liability Policy",
+      "subtitle": "Please review our policies regarding car condition, care, and liability during towing."
+    },
+    "emergencyService": {
+      "title": "Emergency Service Policy",
+      "subtitle": "Please review our policies regarding emergency towing, roadside recovery, and urgent dispatch."
+    },
+    "serviceAreaPolicy": {
+      "title": "Service Area & Availability Policy",
+      "subtitle": "Please review our policies regarding geographic coverage, operating hours, and service availability."
+    },
+    "disclaimer": {
+      "title": "Website & Service Disclaimer",
+      "subtitle": "Important legal notices regarding the information and calculators on our website."
+    },
+    "cookie": {
+      "title": "Cookie Policy",
+      "subtitle": "Information about how our website uses cookies and similar technologies."
+    },
+    "complaints": {
+      "title": "Customer Complaints & Dispute Resolution Policy",
+      "subtitle": "How to submit feedback, report a service issue, or resolve a billing dispute."
+    },
+    "accessibility": {
+      "title": "Accessibility Statement",
+      "subtitle": "Our commitment to ensuring digital accessibility for all users."
+    }
+  },
+  "serviceAreas": {
+    "title": "Our Service Areas Across Ghana",
+    "description": "Fast, dependable 24/7 emergency towing, vehicle recovery, and roadside assistance across all 16 regions, major cities, and highway corridors in Ghana.",
+    "template": {
+      "breadcrumbParent": "Towing Services",
+      "breadcrumbIndex": "Service Areas",
+      "ctaHeading": "Need Immediate Assistance?",
+      "ctaSubtext": "Call or WhatsApp us now to book your tow.",
+      "callButton": "Call Now",
+      "whatsappButton": "WhatsApp Us",
+      "prevAreaLabel": "Previous Area",
+      "nextAreaLabel": "Next Area"
+    }
+  }
+}
