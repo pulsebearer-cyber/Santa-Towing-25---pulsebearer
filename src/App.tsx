@@ -20,6 +20,12 @@ import AdminPagesText from './admin/pages/AdminPagesText';
 import AdminImages from './admin/pages/AdminImages';
 import AdminInventory from './admin/pages/AdminInventory';
 import AdminProfile from './admin/pages/AdminProfile';
+import AdminInvoices from './admin/pages/AdminInvoices';
+import AdminReceipts from './admin/pages/AdminReceipts';
+import AdminCustomers from './admin/pages/AdminCustomers';
+import AdminImageStudio from './admin/pages/AdminImageStudio';
+import AdminDocSettings from './admin/pages/AdminDocSettings';
+import AdminBackupExport from './admin/pages/AdminBackupExport';
 
 import Home from './pages/Home';
 import Services from './pages/Services';
@@ -369,6 +375,12 @@ function AppContent() {
             <Route path="pages-text" element={<AdminPagesText />} />
             <Route path="images" element={<AdminImages />} />
             <Route path="inventory" element={<AdminInventory />} />
+            <Route path="invoices" element={<AdminInvoices />} />
+            <Route path="receipts" element={<AdminReceipts />} />
+            <Route path="customers" element={<AdminCustomers />} />
+            <Route path="image-studio" element={<AdminImageStudio />} />
+            <Route path="doc-settings" element={<AdminDocSettings />} />
+            <Route path="backup" element={<AdminBackupExport />} />
             <Route path="profile" element={<AdminProfile />} />
           </Route>
 

@@ -13,6 +13,11 @@ import {
   Edit3,
   X,
   ShieldCheck,
+  Receipt,
+  Users,
+  SlidersHorizontal,
+  Settings,
+  Database,
 } from 'lucide-react';
 import { getCurrentUser } from '../lib/auth';
 
@@ -45,23 +50,34 @@ export default function AdminSidebar({ isOpen, onClose }: AdminSidebarProps) {
       ],
     },
     {
-      label: 'CONTENT',
+      label: 'DOCUMENTS & FINANCE',
       items: [
-        { name: 'Pages & Text', href: '/admin/pages-text', icon: FileText },
-        { name: 'Images', href: '/admin/images', icon: ImageIcon },
+        { name: 'Pro Forma Invoices', href: '/admin/invoices', icon: FileText, badge: 'PFI' },
+        { name: 'Official Receipts', href: '/admin/receipts', icon: Receipt, badge: 'REC' },
+        { name: 'Customer Directory', href: '/admin/customers', icon: Users },
+        { name: 'Document Templates', href: '/admin/doc-settings', icon: Settings },
+      ],
+    },
+    {
+      label: 'STUDIO & MEDIA',
+      items: [
+        { name: 'Image Studio', href: '/admin/image-studio', icon: SlidersHorizontal, badge: 'Studio' },
+        { name: 'Site Images', href: '/admin/images', icon: ImageIcon },
         { name: 'Inventory', href: '/admin/inventory', icon: Package, badge: 'Live' },
       ],
     },
     {
-      label: 'APPEARANCE',
+      label: 'CONTENT & THEME',
       items: [
+        { name: 'Pages & Text', href: '/admin/pages-text', icon: FileText },
         { name: 'Colors', href: '/admin/colors', icon: Palette },
         { name: 'Logo', href: '/admin/logo', icon: Sparkles },
       ],
     },
     {
-      label: 'SETTINGS',
+      label: 'SYSTEM & SETTINGS',
       items: [
+        { name: 'Data Backup & Export', href: '/admin/backup', icon: Database },
         { name: 'Links', href: '/admin/links', icon: Link2 },
         { name: 'Profile', href: '/admin/profile', icon: User },
       ],

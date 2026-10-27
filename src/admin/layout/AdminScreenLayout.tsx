@@ -5,9 +5,9 @@ import ConfirmDialog from '../components/ConfirmDialog';
 interface AdminScreenLayoutProps {
   title: string;
   subtitle?: string;
-  hasUnsavedChanges: boolean;
-  onSave: () => void;
-  onReset: () => void;
+  hasUnsavedChanges?: boolean;
+  onSave?: () => void;
+  onReset?: () => void;
   isSaving?: boolean;
   saveLabel?: string;
   resetLabel?: string;
@@ -22,7 +22,7 @@ interface AdminScreenLayoutProps {
 export default function AdminScreenLayout({
   title,
   subtitle,
-  hasUnsavedChanges,
+  hasUnsavedChanges = false,
   onSave,
   onReset,
   isSaving = false,
@@ -40,7 +40,7 @@ export default function AdminScreenLayout({
 
   const handleConfirmReset = () => {
     setResetDialogOpen(false);
-    onReset();
+    if (onReset) onReset();
   };
 
   return (
@@ -78,25 +78,29 @@ export default function AdminScreenLayout({
         <div className="hidden sm:flex items-center gap-3 shrink-0">
           {extraHeaderActions}
 
-          <button
-            type="button"
-            onClick={() => setResetDialogOpen(true)}
-            disabled={!hasUnsavedChanges && !isSaving}
-            className="min-h-[44px] px-4 py-2 text-sm font-medium text-slate-700 bg-white border border-slate-300 rounded-lg hover:bg-slate-50 hover:text-slate-900 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#015557]"
-          >
-            <RotateCcw className="w-4 h-4 text-slate-500" />
-            <span>{resetLabel}</span>
-          </button>
+          {onSave && (
+            <>
+              <button
+                type="button"
+                onClick={() => setResetDialogOpen(true)}
+                disabled={!hasUnsavedChanges && !isSaving}
+                className="min-h-[44px] px-4 py-2 text-sm font-medium text-slate-700 bg-white border border-slate-300 rounded-lg hover:bg-slate-50 hover:text-slate-900 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#015557]"
+              >
+                <RotateCcw className="w-4 h-4 text-slate-500" />
+                <span>{resetLabel}</span>
+              </button>
 
-          <button
-            type="button"
-            onClick={onSave}
-            disabled={isSaving}
-            className="min-h-[44px] px-5 py-2 text-sm font-semibold text-white bg-[#015557] hover:bg-[#014345] rounded-lg transition-colors shadow-xs flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#015557] focus-visible:ring-offset-2 disabled:opacity-75"
-          >
-            <Save className="w-4 h-4" />
-            <span>{isSaving ? 'Saving...' : saveLabel}</span>
-          </button>
+              <button
+                type="button"
+                onClick={onSave}
+                disabled={isSaving}
+                className="min-h-[44px] px-5 py-2 text-sm font-semibold text-white bg-[#015557] hover:bg-[#014345] rounded-lg transition-colors shadow-xs flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#015557] focus-visible:ring-offset-2 disabled:opacity-75"
+              >
+                <Save className="w-4 h-4" />
+                <span>{isSaving ? 'Saving...' : saveLabel}</span>
+              </button>
+            </>
+          )}
         </div>
       </div>
 
@@ -168,27 +172,29 @@ export default function AdminScreenLayout({
       </div>
 
       {/* Sticky Bottom Bar for Mobile (Save and Reset touch controls) */}
-      <div className="sm:hidden fixed bottom-0 inset-x-0 z-30 bg-white border-t border-slate-200 px-4 py-3 shadow-lg flex items-center justify-between gap-3">
-        <button
-          type="button"
-          onClick={() => setResetDialogOpen(true)}
-          disabled={!hasUnsavedChanges && !isSaving}
-          className="flex-1 min-h-[44px] px-4 py-2.5 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-lg hover:bg-slate-50 transition-colors disabled:opacity-50 flex items-center justify-center gap-1.5"
-        >
-          <RotateCcw className="w-3.5 h-3.5 text-slate-500" />
-          <span>{resetLabel}</span>
-        </button>
+      {onSave && (
+        <div className="sm:hidden fixed bottom-0 inset-x-0 z-30 bg-white border-t border-slate-200 px-4 py-3 shadow-lg flex items-center justify-between gap-3">
+          <button
+            type="button"
+            onClick={() => setResetDialogOpen(true)}
+            disabled={!hasUnsavedChanges && !isSaving}
+            className="flex-1 min-h-[44px] px-4 py-2.5 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-lg hover:bg-slate-50 transition-colors disabled:opacity-50 flex items-center justify-center gap-1.5"
+          >
+            <RotateCcw className="w-3.5 h-3.5 text-slate-500" />
+            <span>{resetLabel}</span>
+          </button>
 
-        <button
-          type="button"
-          onClick={onSave}
-          disabled={isSaving}
-          className="flex-1 min-h-[44px] px-5 py-2.5 text-xs font-semibold text-white bg-[#015557] hover:bg-[#014345] rounded-lg transition-colors shadow-xs flex items-center justify-center gap-1.5"
-        >
-          <Save className="w-3.5 h-3.5" />
-          <span>{isSaving ? 'Saving...' : saveLabel}</span>
-        </button>
-      </div>
+          <button
+            type="button"
+            onClick={onSave}
+            disabled={isSaving}
+            className="flex-1 min-h-[44px] px-5 py-2.5 text-xs font-semibold text-white bg-[#015557] hover:bg-[#014345] rounded-lg transition-colors shadow-xs flex items-center justify-center gap-1.5"
+          >
+            <Save className="w-3.5 h-3.5" />
+            <span>{isSaving ? 'Saving...' : saveLabel}</span>
+          </button>
+        </div>
+      )}
 
       {/* Confirmation Dialog on Reset */}
       <ConfirmDialog

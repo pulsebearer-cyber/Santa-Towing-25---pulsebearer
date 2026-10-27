@@ -56,7 +56,7 @@ async function generateSitemap() {
         routePath !== '/search' &&
         routePath !== '/404' &&
         !routePath.startsWith('/admin') &&
-        !['colors', 'logo', 'links', 'pages-text', 'images', 'inventory', 'profile'].includes(routePath)
+        !['colors', 'logo', 'links', 'pages-text', 'images', 'inventory', 'profile', 'invoices', 'receipts', 'customers', 'image-studio', 'doc-settings', 'backup'].includes(routePath)
       ) {
         addUrl(routePath);
       }

@@ -17,4 +17,32 @@ body {
   @apply bg-white text-dark font-sans antialiased;
 }
 
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-document-root,
+  #printable-document-root * {
+    visibility: visible;
+  }
+  #printable-document-root {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 12mm !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  @page {
+    size: A4 portrait;
+    margin: 8mm;
+  }
+}
+
 

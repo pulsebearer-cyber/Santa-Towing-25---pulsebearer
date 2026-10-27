@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   FileText,
@@ -15,6 +15,12 @@ import {
   Wrench,
   Truck,
   Check,
+  Receipt,
+  Sliders,
+  Users,
+  Database,
+  DollarSign,
+  TrendingUp,
 } from 'lucide-react';
 import AdminScreenLayout from '../layout/AdminScreenLayout';
 import AdminCard from '../components/AdminCard';
@@ -29,6 +35,7 @@ import EmptyState from '../components/EmptyState';
 import { useAdminToast } from '../context/AdminToastContext';
 import { useContent, useContentManager } from '@/context/ContentContext';
 import { ReorderableItem, RecentlyEditedItem } from '../types';
+import { getFinancialOverviewStats } from '@/lib/documentStorage';
 
 export default function AdminDashboardHome() {
   const navigate = useNavigate();
@@ -51,6 +58,11 @@ export default function AdminDashboardHome() {
   const [emergencyBannerActive, setEmergencyBannerActive] = useState(true);
   const [onlineBookingEnabled, setOnlineBookingEnabled] = useState(true);
   const [isSaving, setIsSaving] = useState(false);
+  const [financeStats, setFinanceStats] = useState(getFinancialOverviewStats());
+
+  useEffect(() => {
+    setFinanceStats(getFinancialOverviewStats());
+  }, []);
 
   // Priority services reorderable list
   const [priorityServices, setPriorityServices] = useState<ReorderableItem[]>([
@@ -146,40 +158,57 @@ export default function AdminDashboardHome() {
   // Quick Action Cards configuration
   const quickActions = [
     {
+      id: 'qa-invoices',
+      title: 'Pro Forma Invoices',
+      description: 'Create, compute tax & discounts, duplicate, and print A4 invoices',
+      icon: FileText,
+      onClick: () => {
+        navigate('/admin/invoices');
+      },
+    },
+    {
+      id: 'qa-receipts',
+      title: 'Official Receipts',
+      description: 'Record MoMo & bank settlements and update outstanding customer balances',
+      icon: Receipt,
+      onClick: () => {
+        navigate('/admin/receipts');
+      },
+    },
+    {
+      id: 'qa-image-studio',
+      title: 'Image Studio & Editor',
+      description: 'Deterministic 5 aspect ratios crop, dimension scaling, and text/logo watermarking',
+      icon: Sliders,
+      onClick: () => {
+        navigate('/admin/image-studio');
+      },
+    },
+    {
+      id: 'qa-customers',
+      title: 'Customer Directory',
+      description: 'Manage client accounts, contact coordinates, and linked billing records',
+      icon: Users,
+      onClick: () => {
+        navigate('/admin/customers');
+      },
+    },
+    {
       id: 'qa-home',
-      title: 'Edit homepage',
+      title: 'Edit homepage text',
       description: 'Modify hero banner headlines, emergency badge & service cards',
       icon: FileText,
       onClick: () => {
-        toast.info('Navigating to Pages & Text editor: Homepage section');
         navigate('/admin/pages-text');
       },
     },
     {
-      id: 'qa-phone',
-      title: 'Change phone & links',
-      description: 'Update 24/7 emergency dispatch hotline, WhatsApp chat, and navigation links',
-      icon: Phone,
+      id: 'qa-backup',
+      title: 'Backup & CSV Export',
+      description: 'Export spreadsheets or download complete encrypted JSON database archive',
+      icon: Database,
       onClick: () => {
-        navigate('/admin/links');
-      },
-    },
-    {
-      id: 'qa-colors',
-      title: 'Change colors',
-      description: 'Adjust brand teal primary color, dark tones & red accents',
-      icon: Palette,
-      onClick: () => {
-        navigate('/admin/colors');
-      },
-    },
-    {
-      id: 'qa-logo',
-      title: 'Replace logo',
-      description: 'Upload or update the public brand mark and favicon',
-      icon: Sparkles,
-      onClick: () => {
-        navigate('/admin/logo');
+        navigate('/admin/backup');
       },
     },
   ];
@@ -300,6 +329,84 @@ export default function AdminDashboardHome() {
         </div>
       }
     >
+      {/* 0. Financial & Document Overview KPIs */}
+      <section aria-labelledby="finance-overview-heading" className="space-y-3">
+        <div className="flex items-center justify-between">
+          <h2 id="finance-overview-heading" className="text-sm font-semibold text-slate-900 tracking-tight flex items-center gap-2">
+            <span>Billing &amp; Revenue Overview</span>
+            <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-50 text-[#015557] border border-emerald-200 uppercase">
+              Financial Suite
+            </span>
+          </h2>
+          <button
+            type="button"
+            onClick={() => navigate('/admin/invoices')}
+            className="text-xs font-semibold text-[#015557] hover:underline flex items-center gap-1"
+          >
+            <span>Manage Invoices</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </button>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
+          <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs space-y-1">
+            <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider block">
+              Total Invoiced Value
+            </span>
+            <h3 className="text-xl font-black text-slate-900 font-mono tracking-tight">
+              GH₵ {financeStats.totalInvoiced.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+            </h3>
+            <span className="text-[10px] text-slate-400 block">
+              Across {financeStats.totalInvoices} Pro Forma Invoices
+            </span>
+          </div>
+
+          <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs space-y-1">
+            <span className="text-[11px] font-semibold text-emerald-700 uppercase tracking-wider block">
+              Payments Collected
+            </span>
+            <h3 className="text-xl font-black text-[#015557] font-mono tracking-tight">
+              GH₵ {financeStats.totalPaid.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+            </h3>
+            <span className="text-[10px] text-slate-400 block">
+              {financeStats.receiptsCount} Verified Receipts
+            </span>
+          </div>
+
+          <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs space-y-1">
+            <span className="text-[11px] font-semibold text-red-700 uppercase tracking-wider block">
+              Outstanding Balance
+            </span>
+            <h3 className="text-xl font-black text-[#d80000] font-mono tracking-tight">
+              GH₵ {financeStats.outstandingBalance.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+            </h3>
+            <span className="text-[10px] text-slate-400 block">
+              Pending client settlement
+            </span>
+          </div>
+
+          <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs space-y-1">
+            <span className="text-[11px] font-semibold text-blue-700 uppercase tracking-wider block">
+              Active Documents
+            </span>
+            <div className="flex items-baseline gap-2">
+              <h3 className="text-xl font-black text-slate-900 font-mono tracking-tight">
+                {financeStats.statusCounts.Issued}
+              </h3>
+              <span className="text-xs text-slate-500">Issued</span>
+              <span className="text-slate-300">&bull;</span>
+              <span className="font-bold text-emerald-700 font-mono">
+                {financeStats.statusCounts.Accepted}
+              </span>
+              <span className="text-xs text-slate-500">Accepted</span>
+            </div>
+            <span className="text-[10px] text-slate-400 block">
+              {financeStats.statusCounts.Draft} Drafts awaiting dispatch
+            </span>
+          </div>
+        </div>
+      </section>
+
       {/* 1. Quick-Action Cards Section */}
       <section aria-labelledby="quick-actions-heading" className="space-y-3">
         <h2 id="quick-actions-heading" className="text-sm font-semibold text-slate-900 tracking-tight">

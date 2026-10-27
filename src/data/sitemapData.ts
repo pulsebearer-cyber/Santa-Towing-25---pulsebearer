@@ -414,6 +414,62 @@ export const ADMIN_SECTIONS: AdminSectionDef[] = [
       },
     ],
   },
+  {
+    sectionTitle: 'Pro Forma Invoices & Financial Documents',
+    sectionDescription: 'Manage quotes, heavy haulage fee estimates, customer accounts receivable, and printable A4 documents.',
+    iconName: 'FileText',
+    links: [
+      {
+        label: 'Pro Forma Invoices Manager',
+        path: '/admin/invoices',
+        badge: 'Invoices',
+        description: 'Create, compute taxes & discounts, duplicate, and print A4 pro forma invoices.',
+        section: 'Financial Suite',
+      },
+      {
+        label: 'Official Receipts & Payments',
+        path: '/admin/receipts',
+        badge: 'Receipts',
+        description: 'Record cash, MoMo & bank payments, settle invoices, and issue receipts.',
+        section: 'Financial Suite',
+      },
+      {
+        label: 'Customer Billing Directory',
+        path: '/admin/customers',
+        badge: 'Customers',
+        description: 'Manage client accounts, contact information, and linked transaction history.',
+        section: 'Financial Suite',
+      },
+      {
+        label: 'Document Templates & Settings',
+        path: '/admin/doc-settings',
+        badge: 'Billing Settings',
+        description: 'Configure corporate letterhead, payment instructions, and terms & conditions.',
+        section: 'Financial Suite',
+      },
+    ],
+  },
+  {
+    sectionTitle: 'Image Studio & Media Management',
+    sectionDescription: 'Deterministic aspect cropping, pixel dimension scaling, text/logo watermarking, and media exports.',
+    iconName: 'Image',
+    links: [
+      {
+        label: 'Image Studio & Editor',
+        path: '/admin/image-studio',
+        badge: 'Image Studio',
+        description: 'Deterministic 5-aspect ratio cropping (1:1, 3:2, 2:3, 16:9, 9:16), pixel scaling, and overlays.',
+        section: 'Studio & Media',
+      },
+      {
+        label: 'Data Backup, Export & Restore Center',
+        path: '/admin/backup',
+        badge: 'Data Backups',
+        description: 'Full database JSON backups, CSV spreadsheet exports, and audit activity trail.',
+        section: 'Studio & Media',
+      },
+    ],
+  },
 ];
 
 export const ADMIN_PAGES: SitemapLink[] = ADMIN_SECTIONS.flatMap((sec) => sec.links);
